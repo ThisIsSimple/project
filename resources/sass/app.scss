@@ -1,0 +1,29 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// MathQuill
+@import './mathquill.css';
+
+// FontAwesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+  //font-family: "Nunito", sans-serif;
+}
+
+#toolbox {
+  padding: 5px;
+  #clear, .tool {
+    margin: 0 10px;
+    &.active {
+      color: $primary;
+    }
+  }
+}
