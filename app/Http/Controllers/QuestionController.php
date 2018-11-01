@@ -51,11 +51,17 @@ class QuestionController extends Controller
         $question = $request->input('question');
         $answer = $request->input('answer');
         $type = $request->input('type');
+        $modified = $request->input('modified');
+        $scope = $request->input('scope');
+        $algorithm = $request->input('algorithm');
 
         $data = Question::create([
             'question' => $question,
             'answer' => $answer,
-            'type' => $type
+            'type' => $type,
+            'modified' => $modified,
+            'scope' => $scope,
+            'algorithm' => $algorithm,
         ]);
 
         return redirect('/question/'.$data->id);

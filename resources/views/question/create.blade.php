@@ -32,8 +32,20 @@
                                     <input id="선택형" type="radio" name="type" value="선택형"> <label for="선택형">선택형</label>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="modified">변형 문제</label>
+                                <textarea name="modified" id="modified" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="scope">스코프</label>
+                                <input type="text" class="form-control" name="scope" id="scope">
+                            </div>
+                            <div class="form-group">
+                                <label for="algorithm">알고리즘</label>
+                                <textarea name="algorithm" id="algorithm" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
                             <div class="text-center">
-                            <input type="submit" class="btn btn-primary" value="출제하기">
+                                <input type="submit" class="btn btn-primary" value="출제하기">
                             </div>
                         </form>
                     </div>
